@@ -1,0 +1,45 @@
+.primary-nav {
+  padding-top: 10px;
+
+  @mixin atMedium {
+    padding-top: 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    display: inline-block;
+    list-style: none;
+    padding-right: 7px;
+
+    @mixin atMedium {
+      padding-right: 20px;
+    }
+  }
+
+  &__list-item:last-child {
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-right: 20px;
+    }
+  }
+
+  &__link {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    background-color: rgba(47, 85, 114, 0.5);
+
+    @mixin atMedium {
+      padding: 12px 0;
+      font-size: 1rem;
+      background-color: transparent;
+    }
+  }
+}
